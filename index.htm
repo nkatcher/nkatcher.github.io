@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>Oritutorials</title>
+<link rel="stylesheet" type="text/css" href="style_sheet.css">
+    <style>
+        
+        .rowOne{
+            width: 70%;
+            height: 25%;
+            top: 25%;
+            left: 5%;
+            position: absolute;
+            overflow: auto;
+        }
+        .rowOne:hover{
+     background: linear-gradient(#c0ecec, #fbffae);
+        }
+        
+        #picOne{
+            float: left; 
+            width: 40%;
+            height: 98%;
+            margin: 0%;
+            position: relative;
+            overflow: hidden;
+            padding-left: 8%;
+            }
+        
+         #textOne{
+            float: right; 
+            width: 48%;
+            height: 98%;
+            margin: 0%;
+            position: relative;
+            font-size: 20px;
+            line-height: 40px;
+            }
+        
+         .rowTwo{
+            width: 70%;
+            height: 25%;
+            top: 70%;
+            left: 5%;
+            position: absolute;
+            overflow: auto;
+        }
+         .rowTwo:hover{
+     background: linear-gradient(#c0ecec, #fbffae);
+        }
+        
+        #picTwo{
+            float: left; 
+            width: 48%;
+            height: 98%;
+            margin: 0%;
+            position: relative;
+            text-align: right;
+             font-size: 20px;
+            line-height: 40px;
+            }
+        
+         #textTwo{
+            float: right; 
+            width: 40%;
+            height: 98%;
+            margin: 0%;
+            position: relative;
+             padding-right: 8%;
+            }
+        
+        .rowThree{
+            width: 70%;
+            height: 25%;
+            top: 115%;
+            left: 5%;
+            position: absolute;
+            overflow: auto;
+        }
+         .rowThree:hover{
+     background: linear-gradient(#c0ecec, #fbffae);
+        }
+        
+        #picThree{
+            float: left; 
+            width: 35%;
+            height: 98%;
+            margin: 0%;
+            position: relative;
+            padding-left: 13%;
+            }
+        
+         #textThree{
+            float: right; 
+            width: 48%;
+            height: 98%;
+            margin: 0%;
+            position: relative;
+              font-size: 18px;
+            line-height: 37px;
+            }
+        
+        
+    </style>
+</head>
+
+<body>
+  
+    
+  <nav>
+      <a href="index.htm"><p>home</p></a>
+      <a href="contact.htm"><p>contact us</p></a>
+      <div class="dropdown">
+  <span>Tutorials</span>
+  <div class="dropdown-content">
+      <a href="crane.htm"><p>crane</p></a>
+      <a href="butterfly.htm"><p>butterfly</p></a>
+      <a href="boat.htm"><p>boat</p></a>
+  </div>
+</div>
+</nav>
+    
+<header>
+<h1>Oritutorials</h1>
+</header>
+    
+    
+    <section>
+    <a id="linky" href="crane.htm"><div class="rowOne">
+    <p id="picOne"> <img src="images/crane.jpg" height="100%" width="100%"></p>
+    <p id="textOne"> Crane <br/> Difficulty: 2 / 5 <br/> Steps: 12<br /> Recommended Paper Size: 15cm x 15cm</p>
+    </div></a>
+        
+     <a id="linky" href="butterfly.htm"><div class="rowTwo">
+    <p id="picTwo">Butterfly <br/> Difficulty: 1 / 5 <br/> Steps: <br /> Recommended Paper Size: 15cm x 15cm</p>
+    <p id="textTwo"><img src="images/butterfly.jpg" height="100%" width="100%"></p>
+    </div></a>
+         
+    <a id="linky" href="boat.htm"> <div class="rowThree">
+    <p id="picThree"><img src="images/boat.jpg" height="100%" width="100%"></p>
+    <p id="textThree">Boat <br/> Difficulty: 1 / 5 <br/> Steps: <br /> Recommended Paper Size: 8.5in x 11in (Any paper with a 1:.77 ratio will do)</p>
+        </div></a>
+        </section>
+    
+   
+    
+ <script>
+function topFunction() {
+ document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+}
+</script>
+    
+    <footer>
+      <img onclick="topFunction()" id="logo" src="images/logo.png" height="70px" width="70px">
+   </footer>
+    
+</body>
+</html>
