@@ -1,0 +1,299 @@
+<html>
+<head>
+<title> Oculus Quest Games</title>
+<style>
+    
+body{
+    background: linear-gradient(225deg, rgba(81,10,198,1) 0%, rgba(221,96,167,1) 100%);
+    color: white; 
+    font-family: "Verdana", sans-serif;
+
+    }
+    #title{font-size: 75px;}
+    
+    .pics{line-height: 60px; font-size: 25px;}
+    
+    img:hover{border: thick solid #fff;}
+    
+    #q128:hover{border: thick solid #000;}
+    
+    #q64:hover{border: thick solid #000;}
+    
+    button{
+        width:300px;
+        height: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 50px;
+        color: cadetblue;
+        background-color: ghostwhite;
+    }
+    
+    button:hover{
+        border: 5px solid #000;
+    }
+    
+</style>
+</head>
+
+<body>
+<center>
+        
+    <script>
+        var questAmount = 0;
+        var totalQuestAmount = 0;
+        
+        var gigs = 0;
+        
+        var cost = 0;
+        
+        var comfort = 0;
+        var av = 0;
+        var avcomfort = 0;
+        var love = 0;
+        
+        var g1 = .23,
+            g2 = 1.34,
+            g3 = 1.96,
+            g4 = .222,
+            g5 = 1.89,
+            g6 = .333,
+            g7 = .876,
+            g8 = .441,
+            g9 = 1.24,
+            g10 = .841,
+            g11 = .955,
+            g12 = 2.58,
+            g13 = 1,
+            g14 = 1.69,
+            g15= .391;
+        
+        var c1 = 15,
+            c2 = 20,
+            c3 = 10,
+            c4 = 0,
+            c5 = 15,
+            c6 = 30,
+            c7 = 0,
+            c8 = 0,
+            c9 = 10,
+            c10 = 30,
+            c11 = 30,
+            c12 = 30,
+            c13 = 20,
+            c14 = 15,
+            c15= 0;
+        
+        var w1 = 1,
+            w2 = 1,
+            w3 = 2,
+            w4 = 1,
+            w5 = 1,
+            w6 = 1,
+            w7 = 1,
+            w8 = 1,
+            w9 = 1,
+            w10 = 2,
+            w11 = 1,
+            w12 = 1,
+            w13 = 2,
+            w14 = 1,
+            w15= 3;
+        
+        function q64(){
+          document.getElementById("q64").style.border = "15px solid #000";
+          questAmount = questAmount + 64;
+        }
+        function q128(){
+          document.getElementById("q128").style.border = "15px solid #000";
+            questAmount = questAmount + 128;
+          }
+        function a1(){
+          document.getElementById("angry").style.border = "15px solid #fff";
+          gigs = gigs + g1;
+          cost = cost + c1;
+          av = av + 1;
+          comfort = comfort + w1;
+          }
+        function a2(){
+          document.getElementById("apex").style.border = "15px solid #fff";
+            gigs = gigs + g2;
+            cost = cost + c2;
+            av = av + 1;
+          comfort = comfort + w2;
+          }
+        function a3(){
+          document.getElementById("apollo").style.border = "15px solid #fff";
+            gigs = gigs + g3;
+            cost = cost + c3;
+            av = av + 1;
+          comfort = comfort + w3;
+          }
+        function a4(){
+          document.getElementById("bait").style.border = "15px solid #fff";
+            gigs = gigs + g4;
+            cost = cost + c4;
+            av = av + 1;
+          comfort = comfort + w4;
+          }
+        function a5(){
+          document.getElementById("ballista").style.border = "15px solid #fff";
+            gigs = gigs + g5;
+            cost = cost + c5;
+            av = av + 1;
+          comfort = comfort + w5;
+          }
+        function a6(){
+          document.getElementById("beat").style.border = "15px solid #fff";
+            gigs = gigs + g6;
+            cost = cost + c6;
+            av = av + 1;
+          comfort = comfort + w6;
+          }
+        function a7(){
+          document.getElementById("big").style.border = "15px solid #fff";
+            gigs = gigs + g7;
+            cost = cost + c7;
+            av = av + 1;
+          comfort = comfort + w7;
+          }
+        function a8(){
+          document.getElementById("bogo").style.border = "15px solid #fff";
+            gigs = gigs + g8;
+            cost = cost + c8;
+            av = av + 1;
+          comfort = comfort + w8;
+          }
+        function a9(){
+          document.getElementById("bonfire").style.border = "15px solid #fff";
+            gigs = gigs + g9;
+            cost = cost + c9;
+            av = av + 1;
+           comfort = comfort + w9;
+          }
+        function a10(){
+          document.getElementById("box").style.border = "15px solid #fff";
+            gigs = gigs + g10;
+            cost = cost + c10;
+            av = av + 1;
+           comfort = comfort + w10;
+          }
+        function a11(){
+          document.getElementById("creed").style.border = "15px solid #fff";
+            gigs = gigs + g11;
+            cost = cost + c11;
+            av = av + 1;
+           comfort = comfort + w11;
+          }
+        function a12(){
+          document.getElementById("dance").style.border = "15px solid #fff";
+            gigs = gigs + g12;
+            cost = cost + c12;
+            av = av + 1;
+           comfort = comfort + w12;
+          }
+        function a13(){
+          document.getElementById("dead").style.border = "15px solid #fff";
+            gigs = gigs + g13;
+            cost = cost + c13;
+            av = av + 1;
+           comfort = comfort + w13;
+          }
+        function a14(){
+          document.getElementById("drop").style.border = "15px solid #fff";
+            gigs = gigs + g14;
+            cost = cost + c14;
+            av = av + 1;
+           comfort = comfort + w14;
+          }
+         function a15(){
+          document.getElementById("epic").style.border = "15px solid #fff";
+            gigs = gigs + g15;
+            cost = cost + c15;
+            av = av + 1;
+           comfort = comfort + w15;
+          }
+        
+        
+        
+        function calc(){
+         avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost: " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+        }
+        
+    </script>
+        
+<h1 id="title">Quest Games Guide</h1>
+<h3>Select the games you want to buy on the Oculus Quest to get the cost, the estimated amount of gigabytes it'll take up, and the average comfortability of the games</h3>
+<br />
+<hr />
+<br />
+<br />
+        
+<div class="pics">
+    
+<img id="q64" onclick="q64()" src="image/q.png" height="210" width="390" alt="Oculus Quest"><p>64GB Model</p>
+    
+<img id="q128" onclick="q128()" src="image/q.png" height="210" width="390" alt="Oculus Quest"><p>128GB Model</p><br />
+    
+<img id="angry" onclick="a1()" src="image/angry.png" height="160px" width="300px" alt="Angry Birds"><p>Angry Birds VR: Isle of Pigs</p>   
+<br />    
+<img id="apex" onclick="a2()" src="image/apex.png" height="160px" width="300px" alt="Apex Construct"><p>Apex Construct</p>    
+<br />    
+<img id="apollo" onclick="a3()" src="image/apollo.png" height="160px" width="300px" alt="Apollo 11"><p>Apollo 11</p>    
+<br />    
+<img id="bait" onclick="a4()" src="image/bait.png" height="160px" width="300px" alt="Bait!"><p>Bait!</p>       
+<br />            
+<img id="ballista" onclick="a5()" src="image/ballista.png" height="160px" width="300px" alt="Ballista"><p>Ballista</p>     
+<br />           
+<img id="beat" onclick="a6()" src="image/beat.png" height="160px" width="300px" alt="Beat Saber"><p>Beat Saber</p>       
+<br />           
+<img id="big" onclick="a7()" src="image/big.png" height="160px" width="300px" alt="Bigscreen"><p>Bigscreen</p>      
+<br />           
+<img id="bogo" onclick="a8()" src="image/bogo.png" height="160px" width="300px" alt="Bogo"><p>Bogo</p>       
+<br />            
+<img id="bonfire" onclick="a9()" src="image/bonfire.png" height="160px" width="300px" alt="Bonfire"><p>Bonfire<p>
+<br />            
+<img id="box" onclick="a10()" src="image/box.png" height="160px" width="300px" alt="BOXVR"><p>BOXVR<p>
+<br />            
+<img id="creed" onclick="a11()" src="image/creed.png" height="160px" width="300px" alt="Creed Rise to Glory"><p>Creed: Rise to Glory<p>
+<br />            
+<img id="dance" onclick="a12()" src="image/dance.png" height="160px" width="300px" alt="Dance Central"><p>Dance Central<p>
+<br />            
+<img id="dead" onclick="a13()" src="image/dead.png" height="160px" width="300px" alt="Dead and Buried II"><p>Dead and Buried II<p>
+<br />            
+<img id="drop" onclick="a14()" src="image/drop.png" height="160px" width="300px" alt="Drop Dead: Dual Strike Edition"><p>Drop Dead: Dual Strike Edition<p>
+<br />            
+<img id="epic" onclick="a15()" src="image/epic.png" height="160px" width="300px" alt="Epic Roller Coasters"><p>Epic Roller Coasters<p>
+       
+ 
+ <p id="total"></p>
+    
+    <br />
+    
+<button onclick="calc()">Calculate</button>
+    
+<p id="end"></p>
+        
+</div> 
+      
+</center>
+</body>
+</html>
+
+
+
+
