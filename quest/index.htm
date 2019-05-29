@@ -1,0 +1,1751 @@
+<html>
+<head>
+<title> Oculus Quest Games</title>
+<style>
+    
+body{
+    background: linear-gradient(225deg, rgba(81,10,198,1) 0%, rgba(221,96,167,1) 100%);
+    color: white; 
+    font-family: "Verdana", sans-serif;
+
+    }
+    #title{font-size: 75px;}
+    
+    .pics{line-height: 60px; font-size: 25px; margin-left: 5%;}
+    
+    img:hover{border: thick solid #fff;}
+    
+    #q128:hover{border: thick solid #000;}
+    
+    #q64:hover{border: thick solid #000;}
+    
+    button{
+        width:300px;
+        height: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 50px;
+        color: cadetblue;
+        background-color: ghostwhite;
+    }
+    button:hover{
+        border: 5px solid #000;
+    }
+    
+    nav{
+            width: 800px;
+            height: 70%;
+            right: 5%;
+            background-color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            line-height: 100px;
+            font-size: 25px;
+            color: black;
+            position: fixed;
+        top: 15%
+        }
+    
+</style>
+</head>
+
+<body>
+            
+    <script>
+        var questAmount = 0;
+        var totalQuestAmount = 0;
+        
+        var gigs = 0;
+        
+        var cost = 0;
+        
+        var comfort = 0;
+        var av = 0;
+        var avcomfort = 0;
+        var love = 0;
+        
+        var g1 = .23,
+            g2 = 1.34,
+            g3 = 1.96,
+            g4 = .222,
+            g5 = 1.89,
+            g6 = .333,
+            g7 = .876,
+            g8 = .441,
+            g9 = 1.24,
+            g10 = .841,
+            g11 = .955,
+            g12 = 2.58,
+            g13 = 1,
+            g14 = 1.69,
+            g15= .391,
+            g16 = .022,
+            g17 = 1.6,
+            g18 = .004,
+            g19 = 2.16,
+            g20 = .736,
+            g21 = .008,
+            g22 = .464,
+            g23 = 1.07,
+            g24 = .728,
+            g25 = 1.65,
+            g26 = .97,
+            g27 = .124,
+            g28 = 2.64,
+            g29 = .952,
+            g30= .776,
+            g31 = .087,
+            g32 = .049,
+            g33 = .834,
+            g34 = .544,
+            g35 = .138,
+            g36 = .071,
+            g37 = .142,
+            g38 = 1.01,
+            g39 = .023,
+            g40 = 1.65,
+            g41 = 1.22,
+            g42 = .762,
+            g43 = .014,
+            g44 = 2.97,
+            g45= .767,
+            g46 = 2.44,
+            g47 = .29,
+            g48 = .049,
+            g49 = 1.41,
+            g50 = 1.14,
+            g51 = 1.79,
+            g52 = .382,
+            g53 = .312,
+            g54 = 1.11,
+            g55 = 2.65,
+            g56 = .427,
+            g57 = .515,
+            g58 = .3,
+            g59 = .938,
+            g60= .26,
+            g61 = .09;
+        
+        var c1 = 15,
+            c2 = 20,
+            c3 = 10,
+            c4 = 0,
+            c5 = 15,
+            c6 = 30,
+            c7 = 0,
+            c8 = 0,
+            c9 = 10,
+            c10 = 30,
+            c11 = 30,
+            c12 = 30,
+            c13 = 20,
+            c14 = 15,
+            c15= 0,
+            c16 = 0,
+            c17 = 25,
+            c18 = 0,
+            c19 = 20,
+            c20 = 0,
+            c21 = 0,
+            c22 = 15,
+            c23 = 10,
+            c24 = 25,
+            c25 = 20,
+            c26 = 30,
+            c27 = 15,
+            c28 = 30,
+            c29 = 10,
+            c30= 10,
+            c31 = 0,
+            c32= 0,
+            c33 = 0,
+            c34 = 0,
+            c35 = 0,
+            c36 = 0,
+            c37 = 0,
+            c38 = 40,
+            c39 = 0,
+            c40 = 0,
+            c41 = 20,
+            c42 = 0,
+            c43 = 0,
+            c44 = 30,
+            c45= 20,
+            c46 = 20,
+            c47 = 0,
+            c48 = 0,
+            c49 = 15,
+            c50 = 30,
+            c51 = 25,
+            c52 = 20,
+            c53 = 20,
+            c54 = 15,
+            c55 = 10,
+            c56 = 20,
+            c57 = 15,
+            c58 = 0,
+            c59 = 15,
+            c60= 10,
+            c61 = 0;
+        
+        
+        var w1 = 1,
+            w2 = 1,
+            w3 = 2,
+            w4 = 1,
+            w5 = 1,
+            w6 = 1,
+            w7 = 1,
+            w8 = 1,
+            w9 = 1,
+            w10 = 2,
+            w11 = 1,
+            w12 = 1,
+            w13 = 2,
+            w14 = 1,
+            w15= 3, 
+            w16 = 1,
+            w17 = 1,
+            w18 = 1,
+            w19 = 2,
+            w20 = 2,
+            w21 = 1,
+            w22 = 1,
+            w23 = 1,
+            w24 = 1,
+            w25 = 1,
+            w26 = 2,
+            w27 = 1,
+            w28 = 1,
+            w29 = 1,
+            w30= 1,
+            w31 = 1,
+            w32 = 1,
+            w33 = 1,
+            w34 = 1,
+            w35 = 1,
+            w36 = 1,
+            w37 = 1,
+            w38 = 2,
+            w39 = 1,
+            w40 = 1,
+            w41 = 1,
+            w42 = 1,
+            w43 = 1,
+            w44 = 1,
+            w45= 3,
+            w46 = 1,
+            w47 = 1,
+            w48 = 1,
+            w49 = 1,
+            w50 = 2,
+            w51 = 1,
+            w52 = 2,
+            w53 = 1,
+            w54 = 2,
+            
+            w55 = 1,
+            w56 = 1,
+            w57 = 1,
+            w58 = 3,
+            w59 = 1,
+            w60= 1,
+            w61 = 1;
+        
+        function q64(){
+          document.getElementById("q64").style.border = "15px solid #000";
+          questAmount = questAmount + 64;
+        }
+        function q128(){
+          document.getElementById("q128").style.border = "15px solid #000";
+            questAmount = questAmount + 128;
+          }
+        function a1(){
+          document.getElementById("angry").style.border = "15px solid #fff";
+          gigs = gigs + g1;
+          cost = cost + c1;
+          av = av + 1;
+          comfort = comfort + w1;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+        }
+                 
+        function a2(){
+          document.getElementById("apex").style.border = "15px solid #fff";
+            gigs = gigs + g2;
+            cost = cost + c2;
+            av = av + 1;
+          comfort = comfort + w2;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+        }
+        function a3(){
+          document.getElementById("apollo").style.border = "15px solid #fff";
+            gigs = gigs + g3;
+            cost = cost + c3;
+            av = av + 1;
+          comfort = comfort + w3;
+          
+        avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+        }
+        function a4(){
+          document.getElementById("bait").style.border = "15px solid #fff";
+            gigs = gigs + g4;
+            cost = cost + c4;
+            av = av + 1;
+          comfort = comfort + w4;
+          avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a5(){
+          document.getElementById("ballista").style.border = "15px solid #fff";
+            gigs = gigs + g5;
+            cost = cost + c5;
+            av = av + 1;
+          comfort = comfort + w5;
+avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a6(){
+          document.getElementById("beat").style.border = "15px solid #fff";
+            gigs = gigs + g6;
+            cost = cost + c6;
+            av = av + 1;
+          comfort = comfort + w6;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+        }
+        function a7(){
+          document.getElementById("big").style.border = "15px solid #fff";
+            gigs = gigs + g7;
+            cost = cost + c7;
+            av = av + 1;
+          comfort = comfort + w7;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a8(){
+          document.getElementById("bogo").style.border = "15px solid #fff";
+            gigs = gigs + g8;
+            cost = cost + c8;
+            av = av + 1;
+          comfort = comfort + w8;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a9(){
+          document.getElementById("bonfire").style.border = "15px solid #fff";
+            gigs = gigs + g9;
+            cost = cost + c9;
+            av = av + 1;
+           comfort = comfort + w9;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a10(){
+          document.getElementById("box").style.border = "15px solid #fff";
+            gigs = gigs + g10;
+            cost = cost + c10;
+            av = av + 1;
+           comfort = comfort + w10;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a11(){
+          document.getElementById("creed").style.border = "15px solid #fff";
+            gigs = gigs + g11;
+            cost = cost + c11;
+            av = av + 1;
+           comfort = comfort + w11;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a12(){
+          document.getElementById("dance").style.border = "15px solid #fff";
+            gigs = gigs + g12;
+            cost = cost + c12;
+            av = av + 1;
+           comfort = comfort + w12;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a13(){
+          document.getElementById("dead").style.border = "15px solid #fff";
+            gigs = gigs + g13;
+            cost = cost + c13;
+            av = av + 1;
+           comfort = comfort + w13;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a14(){
+          document.getElementById("drop").style.border = "15px solid #fff";
+            gigs = gigs + g14;
+            cost = cost + c14;
+            av = av + 1;
+           comfort = comfort + w14;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a15(){
+          document.getElementById("epic").style.border = "15px solid #fff";
+            gigs = gigs + g15;
+            cost = cost + c15;
+            av = av + 1;
+           comfort = comfort + w15;
+             avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a16(){
+          document.getElementById("espn").style.border = "15px solid #ddd";
+            gigs = gigs + g16;
+            cost = cost + c16;
+            av = av + 1;
+           comfort = comfort + w16;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a17(){
+          document.getElementById("exorcist").style.border = "15px solid #fff";
+            gigs = gigs + g17;
+            cost = cost + c17;
+            av = av + 1;
+           comfort = comfort + w17;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a18(){
+          document.getElementById("facebook").style.border = "15px solid #fff";
+            gigs = gigs + g18;
+            cost = cost + c18;
+            av = av + 1;
+           comfort = comfort + w18;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a19(){
+          document.getElementById("face").style.border = "15px solid #fff";
+            gigs = gigs + g19;
+            cost = cost + c19;
+            av = av + 1;
+           comfort = comfort + w19;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a20(){
+          document.getElementById("steps").style.border = "15px solid #fff";
+            gigs = gigs + g20;
+            cost = cost + c20;
+            av = av + 1;
+           comfort = comfort + w20;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a21(){
+          document.getElementById("fox").style.border = "15px solid #fff";
+            gigs = gigs + g21;
+            cost = cost + c21;
+            av = av + 1;
+           comfort = comfort + w21;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a22(){
+          document.getElementById("fruit").style.border = "15px solid #fff";
+            gigs = gigs + g22;
+            cost = cost + c22;
+            av = av + 1;
+           comfort = comfort + w22;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a23(){
+          document.getElementById("tai").style.border = "15px solid #fff";
+            gigs = gigs + g23;
+            cost = cost + c23;
+            av = av + 1;
+           comfort = comfort + w23;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a24(){
+          document.getElementById("expect").style.border = "15px solid #fff";
+            gigs = gigs + g24;
+            cost = cost + c24;
+            av = av + 1;
+           comfort = comfort + w24;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a25(){
+          document.getElementById("job").style.border = "15px solid #fff";
+            gigs = gigs + g25;
+            cost = cost + c25;
+            av = av + 1;
+           comfort = comfort + w25;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a26(){
+          document.getElementById("journey").style.border = "15px solid #fff";
+            gigs = gigs + g26;
+            cost = cost + c26;
+            av = av + 1;
+           comfort = comfort + w26;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a27(){
+          document.getElementById("keep").style.border = "15px solid #fff";
+            gigs = gigs + g27;
+            cost = cost + c27;
+            av = av + 1;
+           comfort = comfort + w27;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a28(){
+          document.getElementById("moss").style.border = "15px solid #fff";
+            gigs = gigs + g28;
+            cost = cost + c28;
+            av = av + 1;
+           comfort = comfort + w28;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a29(){
+          document.getElementById("national").style.border = "15px solid #fff";
+            gigs = gigs + g29;
+            cost = cost + c29;
+            av = av + 1;
+           comfort = comfort + w29;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a30(){
+          document.getElementById("nature").style.border = "15px solid #fff";
+            gigs = gigs + g30;
+            cost = cost + c30;
+            av = av + 1;
+           comfort = comfort + w30;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a31(){
+          document.getElementById("netflix").style.border = "15px solid #fff";
+            gigs = gigs + g31;
+            cost = cost + c31;
+            av = av + 1;
+           comfort = comfort + w31;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a32(){
+          document.getElementById("never").style.border = "15px solid #fff";
+            gigs = gigs + g32;
+            cost = cost + c32;
+            av = av + 1;
+           comfort = comfort + w32;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a33(){
+          document.getElementById("ocean").style.border = "15px solid #fff";
+            gigs = gigs + g33;
+            cost = cost + c33;
+            av = av + 1;
+           comfort = comfort + w33;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a34(){
+          document.getElementById("first").style.border = "15px solid #fff";
+            gigs = gigs + g34;
+            cost = cost + c34;
+            av = av + 1;
+           comfort = comfort + w34;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a35(){
+          document.getElementById("gallery").style.border = "15px solid #ddd";
+            gigs = gigs + g35;
+            cost = cost + c35;
+            av = av + 1;
+           comfort = comfort + w35;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a36(){
+          document.getElementById("tv").style.border = "15px solid #ddd";
+            gigs = gigs + g36;
+            cost = cost + c36;
+            av = av + 1;
+           comfort = comfort + w36;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a37(){
+          document.getElementById("video").style.border = "15px solid #fff";
+            gigs = gigs + g37;
+            cost = cost + c37;
+            av = av + 1;
+           comfort = comfort + w37;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a38(){
+          document.getElementById("orbus").style.border = "15px solid #fff";
+            gigs = gigs + g38;
+            cost = cost + c38;
+            av = av + 1;
+           comfort = comfort + w38;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a39(){
+          document.getElementById("pluto").style.border = "15px solid #fff";
+            gigs = gigs + g39;
+            cost = cost + c39;
+            av = av + 1;
+           comfort = comfort + w39;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a40(){
+          document.getElementById("poker").style.border = "15px solid #fff";
+            gigs = gigs + g40;
+            cost = cost + c40;
+            av = av + 1;
+           comfort = comfort + w40;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a41(){
+          document.getElementById("racket").style.border = "15px solid #fff";
+            gigs = gigs + g41;
+            cost = cost + c41;
+            av = av + 1;
+           comfort = comfort + w41;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a42(){
+          document.getElementById("rec").style.border = "15px solid #fff";
+            gigs = gigs + g42;
+            cost = cost + c42;
+            av = av + 1;
+           comfort = comfort + w42;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a43(){
+          document.getElementById("red").style.border = "15px solid #fff";
+            gigs = gigs + g43;
+            cost = cost + c43;
+            av = av + 1;
+           comfort = comfort + w43;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a44(){
+          document.getElementById("robo").style.border = "15px solid #fff";
+            gigs = gigs + g44;
+            cost = cost + c44;
+            av = av + 1;
+           comfort = comfort + w44;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a45(){
+          document.getElementById("rush").style.border = "15px solid #fff";
+            gigs = gigs + g45;
+            cost = cost + c45;
+            av = av + 1;
+           comfort = comfort + w45;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a46(){
+          document.getElementById("shadow").style.border = "15px solid #fff";
+            gigs = gigs + g46;
+            cost = cost + c46;
+            av = av + 1;
+           comfort = comfort + w46;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a47(){
+          document.getElementById("skybox").style.border = "15px solid #fff";
+            gigs = gigs + g47;
+            cost = cost + c47;
+            av = av + 1;
+           comfort = comfort + w47;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a48(){
+          document.getElementById("sling").style.border = "15px solid #fff";
+            gigs = gigs + g48;
+            cost = cost + c48;
+            av = av + 1;
+           comfort = comfort + w48;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a49(){
+          document.getElementById("space").style.border = "15px solid #fff";
+            gigs = gigs + g49;
+            cost = cost + c49;
+            av = av + 1;
+           comfort = comfort + w49;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a50(){
+          document.getElementById("sports").style.border = "15px solid #fff";
+            gigs = gigs + g50;
+            cost = cost + c50;
+            av = av + 1;
+           comfort = comfort + w50;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a51(){
+          document.getElementById("super").style.border = "15px solid #ccc";
+            gigs = gigs + g51;
+            cost = cost + c51;
+            av = av + 1;
+           comfort = comfort + w51;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a52(){
+          document.getElementById("thumper").style.border = "15px solid #fff";
+            gigs = gigs + g52;
+            cost = cost + c52;
+            av = av + 1;
+           comfort = comfort + w52;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a53(){
+          document.getElementById("tilt").style.border = "15px solid #fff";
+            gigs = gigs + g53;
+            cost = cost + c53;
+            av = av + 1;
+           comfort = comfort + w53;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a54(){
+          document.getElementById("ultra").style.border = "15px solid #fff";
+            gigs = gigs + g54;
+            cost = cost + c54;
+            av = av + 1;
+           comfort = comfort + w54;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a55(){
+          document.getElementById("vader").style.border = "15px solid #fff";
+            gigs = gigs + g55;
+            cost = cost + c55;
+            av = av + 1;
+           comfort = comfort + w55;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a56(){
+          document.getElementById("desktop").style.border = "15px solid #fff";
+            gigs = gigs + g56;
+            cost = cost + c56;
+            av = av + 1;
+           comfort = comfort + w56;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a57(){
+          document.getElementById("virtual").style.border = "15px solid #fff";
+            gigs = gigs + g57;
+            cost = cost + c57;
+            av = av + 1;
+           comfort = comfort + w57;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a58(){
+          document.getElementById("vr").style.border = "15px solid #fff";
+            gigs = gigs + g58;
+            cost = cost + c58;
+            av = av + 1;
+           comfort = comfort + w58;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a59(){
+          document.getElementById("kart").style.border = "15px solid #fff";
+            gigs = gigs + g59;
+            cost = cost + c59;
+            av = av + 1;
+           comfort = comfort + w59;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a60(){
+          document.getElementById("wander").style.border = "15px solid #fff";
+            gigs = gigs + g60;
+            cost = cost + c60;
+            av = av + 1;
+           comfort = comfort + w60;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        function a61(){
+          document.getElementById("youtube").style.border = "15px solid #ddd";
+            gigs = gigs + g61;
+            cost = cost + c61;
+            av = av + 1;
+           comfort = comfort + w61;
+            avcomfort = comfort / av;
+        totalQuestAmount = (questAmount - 12) - gigs;
+            
+        if(avcomfort >= 0 && avcomfort < 1.5){
+           love = "comfortable";
+           }
+        else if(avcomfort >= 1.5 && avcomfort < 2.5){
+            love = "moderate";
+        }
+        else{
+            love = "intense";
+        }
+            document.getElementById("total").innerHTML = "Amount of gigabytes it will take up: " + gigs + "<br />" + "Estimated gigabytes you will have left: " + totalQuestAmount + "<br />" + "Total cost of the games : " + "$"+cost + "<br />" + "Average comfortability: " + love; 
+            
+            document.getElementById("end").innerHTML = "Refresh the page to do it again"
+          }
+        
+
+        
+    </script>
+        <nav> <p id="total"></p></nav>
+<h1 id="title">Quest Games Calculator</h1>
+<h3>Select the games you want to buy on the Oculus <br /> Quest to get the cost, the estimated amount of <br /> gigabytes it'll take up, and the average<br /> comfortability of the games</h3>
+<br />
+<hr />
+<br />
+<br />
+
+<div class="pics">
+    
+<img id="q64" onclick="q64()" src="image/q.png" height="210" width="390" alt="Oculus Quest"><p>64GB Model</p>
+    
+<img id="q128" onclick="q128()" src="image/q.png" height="210" width="390" alt="Oculus Quest"><p>128GB Model</p><br />
+    
+<img id="angry" onclick="a1()" src="image/angry.png" height="160px" width="300px" alt="Angry Birds"><p>Angry Birds VR: Isle of Pigs</p>   
+<br />    
+<img id="apex" onclick="a2()" src="image/apex.png" height="160px" width="300px" alt="Apex Construct"><p>Apex Construct</p>    
+<br />    
+<img id="apollo" onclick="a3()" src="image/apollo.png" height="160px" width="300px" alt="Apollo 11"><p>Apollo 11</p>    
+<br />    
+<img id="bait" onclick="a4()" src="image/bait.png" height="160px" width="300px" alt="Bait!"><p>Bait!</p>       
+<br />            
+<img id="ballista" onclick="a5()" src="image/ballista.png" height="160px" width="300px" alt="Ballista"><p>Ballista</p>     
+<br />           
+<img id="beat" onclick="a6()" src="image/beat.png" height="160px" width="300px" alt="Beat Saber"><p>Beat Saber</p>       
+<br />           
+<img id="big" onclick="a7()" src="image/big.png" height="160px" width="300px" alt="Bigscreen"><p>Bigscreen</p>      
+<br />           
+<img id="bogo" onclick="a8()" src="image/bogo.png" height="160px" width="300px" alt="Bogo"><p>Bogo</p>       
+<br />            
+<img id="bonfire" onclick="a9()" src="image/bonfire.png" height="160px" width="300px" alt="Bonfire"><p>Bonfire<p>
+<br />            
+<img id="box" onclick="a10()" src="image/box.png" height="160px" width="300px" alt="BOXVR"><p>BOXVR<p>
+<br />            
+<img id="creed" onclick="a11()" src="image/creed.png" height="160px" width="300px" alt="Creed Rise to Glory"><p>Creed: Rise to Glory<p>
+<br />            
+<img id="dance" onclick="a12()" src="image/dance.png" height="160px" width="300px" alt="Dance Central"><p>Dance Central<p>
+<br />            
+<img id="dead" onclick="a13()" src="image/dead.png" height="160px" width="300px" alt="Dead and Buried II"><p>Dead and Buried II<p>
+<br />            
+<img id="drop" onclick="a14()" src="image/drop.png" height="160px" width="300px" alt="Drop Dead: Dual Strike Edition"><p>Drop Dead: Dual Strike Edition<p>
+<br />            
+<img id="epic" onclick="a15()" src="image/epic.png" height="160px" width="300px" alt="Epic Roller Coasters"><p>Epic Roller Coasters<p>
+<br />
+<img id="espn" onclick="a16()" src="image/espn.png" height="160px" width="300px" alt="ESPN"><p>ESPN<p>
+<br />            
+<img id="exorcist" onclick="a17()" src="image/exorcist.png" height="160px" width="300px" alt="The Exorcist: Legion VR"><p>The Exorcist: Legion VR<p>
+<br />            
+<img id="facebook" onclick="a18()" src="image/facebook.png" height="160px" width="300px" alt="Facebook Watch"><p>Facebook Watch<p>
+<br />            
+<img id="face" onclick="a19()" src="image/face.png" height="160px" width="300px" alt="Face Your Fears 2"><p>Face Your Fears 2<p>   
+<br />            
+<img id="steps" onclick="a20()" src="image/steps.png" height="160px" width="300px" alt="First Steps"><p>First Steps<p>
+<br />            
+<img id="fox" onclick="a21()" src="image/fox.png" height="160px" width="300px" alt="FOX NOW"><p>FOX NOW<p>
+<br />
+<img id="fruit" onclick="a22()" src="image/fruit.png" height="160px" width="300px" alt="Fruit Ninja"><p>Fruit Ninja<p>
+<br />            
+<img id="tai" onclick="a23()" src="image/tai.png" height="160px" width="300px" alt="Guided Tai Chi"><p>Guided Tai Chi<p>
+<br />            
+<img id="expect" onclick="a24()" src="image/expect.png" height="160px" width="300px" alt="I Expect You To Die"><p>I Expect You To Die<p>
+<br />            
+<img id="job" onclick="a25()" src="image/job.png" height="160px" width="300px" alt="Job Simulator"><p>Job Simulator<p>
+<br />              
+<img id="journey" onclick="a26()" src="image/journey.png" height="160px" width="300px" alt="Journey of the Gods"><p>Journey of the Gods<p>
+<br />            
+<img id="keep" onclick="a27()" src="image/keep.png" height="160px" width="300px" alt="Keep Talking and Nobody Explodes"><p>Keep Talking and Nobody Explodes<p>
+<br />
+<img id="moss" onclick="a28()" src="image/moss.png" height="160px" width="300px" alt="Moss"><p>Moss<p>
+<br />            
+<img id="national" onclick="a29()" src="image/national.png" height="160px" width="300px" alt="National Geographic Explore"><p>National Geographic Explore<p>
+<br />            
+<img id="nature" onclick="a30()" src="image/nature.png" height="160px" width="300px" alt="Nature Treks VR"><p>Nature Treks VR<p>
+<br />            
+<img id="netflix" onclick="a31()" src="image/netflix.png" height="160px" width="300px" alt="Netflix"><p>Netflix<p>
+<br />            
+<img id="never" onclick="a32()" src="image/never.png" height="160px" width="300px" alt="Neverthink"><p>Neverthink<p>
+<br />            
+<img id="ocean" onclick="a33()" src="image/ocean.png" height="160px" width="300px" alt="Ocean Rift"><p>Ocean Rift<p>
+<br />
+<img id="first" onclick="a34()" src="image/first.png" height="160px" width="300px" alt="Oculus First Contact"><p>Oculus First Contact<p>
+<br />            
+<img id="gallery" onclick="a35()" src="image/gallery.png" height="160px" width="300px" alt="Oculus Gallery"><p>Oculus Gallery<p>
+<br />            
+<img id="tv" onclick="a36()" src="image/tv.png" height="160px" width="300px" alt="Oculus TV"><p>Oculus TV<p>
+<br />           
+<img id="video" onclick="a37()" src="image/video.png" height="160px" width="300px" alt="Oculus Video"><p>Oculus Video<p>   
+<br />            
+<img id="orbus" onclick="a38()" src="image/orbus.png" height="160px" width="300px" alt="OrbusVR: Reborn"><p>OrbusVR: Reborn<p>
+<br />            
+<img id="pluto" onclick="a39()" src="image/pluto.png" height="160px" width="300px" alt="Pluto VR"><p>Pluto TV<p>
+<br />
+<img id="poker" onclick="a40()" src="image/poker.png" height="160px" width="300px" alt="PokerStars VR"><p>PokerStars VR<p>
+<br />            
+<img id="racket" onclick="a41()" src="image/racket.png" height="160px" width="300px" alt="Racket Fury"><p>Racket Fury<p>
+<br />            
+<img id="rec" onclick="a42()" src="image/rec.png" height="160px" width="300px" alt="Rec Room"><p>Rec Room<p>
+<br />            
+<img id="red" onclick="a43()" src="image/red.png" height="160px" width="300px" alt="Red Bull TV"><p>Red Bull TV<p>
+<br />            
+<img id="robo" onclick="a44()" src="image/robo.png" height="160px" width="300px" alt="Robo Recall: Unplugged"><p>Robo Recall: Unplugged<p>
+<br />            
+<img id="rush" onclick="a45()" src="image/rush.png" height="160px" width="300px" alt="RUSH"><p>RUSH<p>
+<br />
+<img id="shadow" onclick="a46()" src="image/shadow.png" height="160px" width="300px" alt="Shadow Point"><p>Shadow Point<p>
+<br />            
+<img id="skybox" onclick="a47()" src="image/skybox.png" height="160px" width="300px" alt="SKYBOX VR Video Player"><p>SKYBOX VR Video Player<p>
+<br />            
+<img id="sling" onclick="a48()" src="image/sling.png" height="160px" width="300px" alt="Sling TV"><p>Sling TV<p>
+<br />            
+<img id="space" onclick="a49()" src="image/space.png" height="160px" width="300px" alt="Space Pirate Trainer"><p>Space Pirate Trainer<p>
+<br />            
+<img id="sports" onclick="a50()" src="image/sports.png" height="160px" width="300px" alt="Sports Scramble"><p>Sports Scramble<p>
+<br />            
+<img id="super" onclick="a51()" src="image/super.png" height="160px" width="300px" alt="SUPERHOT VR"><p>SUPERHOT VR<p>
+<br />
+<img id="thumper" onclick="a52()" src="image/thumper.png" height="160px" width="300px" alt="Thumper"><p>Thumper<p>
+<br />            
+<img id="tilt" onclick="a53()" src="image/tilt.png" height="160px" width="300px" alt="Tilt Brush"><p>Tilt Brush<p>
+<br />            
+<img id="ultra" onclick="a54()" src="image/ultra.png" height="160px" width="300px" alt="Ultrawings"><p>Ultrawings<p>
+<br />            
+<img id="vader" onclick="a55()" src="image/vader.png" height="160px" width="300px" alt="Vader Immortal: Episode I"><p>Vader Immortal: Episode I<p>
+<br />            
+<img id="desktop" onclick="a56()" src="image/desktop.png" height="160px" width="300px" alt="Virtual Desktop"><p>Virtual Desktop<p>
+<br />            
+<img id="virtual" onclick="a57()" src="image/virtual.png" height="160px" width="300px" alt="Virtual Virtual Reality"><p>Virtual Virtual Reality<p>
+<br />
+<img id="vr" onclick="a58()" src="image/vr.png" height="160px" width="300px" alt="VRChat"><p>VRChat<p>
+<br />            
+<img id="kart" onclick="a59()" src="image/kart.png" height="160px" width="300px" alt="Vr Karts: Sprint"><p>VR Karts: Sprint<p>
+<br />            
+<img id="wander" onclick="a60()" src="image/wander.png" height="160px" width="300px" alt="Wander"><p>Wander<p>
+<br />            
+<img id="youtube" onclick="a61()" src="image/youtube.png" height="160px" width="300px" alt="Youtube VR"><p>Youtube VR<p>
+<br />            
+    <br />
+        
+</div> 
+      
+</body>
+</html>
